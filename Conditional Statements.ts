@@ -43,3 +43,39 @@ switch (day) {
   default:
     console.log("It's another day of the week!");
 }
+
+//loops
+//for loop
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+  }
+
+  //while loop
+  let userInput: string;
+
+  function countdown(start: number): void {
+    let timeLeft = start;
+  
+    // Loop while timeLeft is greater than 0
+    while (timeLeft > 0) {
+      console.log(timeLeft + " seconds remaining...");
+      timeLeft--; // Decrement time by 1
+    }
+  
+    console.log("Blast off!");
+  }
+  
+  countdown(5); // Example usage with starting time of 5 seconds
+  
+
+//do-while
+let coinTossResult: string;
+
+do {
+  coinTossResult = Math.random() > 0.5 ? "Heads" : "Tails";
+  console.log("Coin toss:", coinTossResult);
+} while (coinTossResult !== "Heads");
+
+console.log("Landed on Heads!");
+
+
